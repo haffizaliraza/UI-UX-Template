@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JIIBS</title>
+</head>
+
+<!-- ---------------------------------------------------------------------- BODY ---------------------------------------------------------------------------------------------- -->
+
+<body class="bg-[#F8F8F9]">
+
+    <!-- ---------------------------------------------------------------------- MAIN ---------------------------------------------------------------------------------------------- -->
+
+
+    <div class="building-pages h-[100%] flex">
+
+        <!-- ---------------------------------------------------------------------- SIDEBAR NAVIGATION ---------------------------------------------------------------------------------------------- -->
+
+
+        <div class="sidebar__navigation py-[60px] px-[20px] bg-white h-lvh w-[280px]">
+
+            <div class="sidebar__navigation--home flex justify-between items-center mb-[30px]">
+
+                <h2 class="text-blue-600 text-[38px] leading-[38px] font-bold">JIIBS</h2>
+
+                <img class="h-[25px] w-[25px]" src="./images/sidebar.svg" alt="side-bar-icon">
+
+            </div>
+
+            <div class="sidebar__navigation--list flex flex-col gap-[12px] w-[100%] mb-[450px]">
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] hover:bg-[#f5f5f5] bg-white transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/home.svg" alt="home-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Home</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] hover:bg-[#f5f5f5] transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/building.svg" alt="building-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Building</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] hover:bg-[#f5f5f5] bg-white transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/unit.svg" alt="unit-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Units</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] hover:bg-[#f5f5f5] bg-white transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/inbox.svg" alt="inbox-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Inbox</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] hover:bg-[#f5f5f5] bg-white transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/analytics.svg" alt="analytics-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Analytics</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] bg-white  hover:bg-[#f5f5f5] transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/lead.svg" alt="lead-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Leads</span>
+
+                </div>
+
+                <div
+                    class="list__item flex justify-start items-center gap-[10px] bg-white hover:bg-[#f5f5f5]  transition-all duration-500 cursor-pointer px-[16px] py-[8px] rounded-[5px]">
+
+                    <img class="h-[24px] w-[24px]" src="./images/help.svg" alt="help-icon">
+
+                    <span class="text-[16px] leading-[22px] font-bold text-[#8c8c8c]">Help Center</span>
+
+                </div>
+
+            </div>
+
+            <div
+                class="sidebar__navigation--profile flex items-center justify-between px-[8px] pb-[6px] pt-[16px]  border-t-[1px] border-[##E4E4E4]">
+
+                <img class="h-[50px] w-[50px] rounded-full" src="./images/3d-rendering-boy-skateboard.jpg" alt="P-1">
+
+                <div class="flex flex-col gap-[1px]">
+
+                    <span class="text-[16px] font-bold leading-[20px]">Anagram Nomad</span>
+
+                    <span class="text-[14px] text-[#8c8c8c]">Logout</span>
+
+                </div>
+
+                <img class="h-[20px] w-[20px] cursor-pointer" src="./images/logout.svg" alt="logout-icon">
+
+            </div>
+
+        </div>
+
+        <!-- ---------------------------------------------------------------------- BUTTONS  ---------------------------------------------------------------------------------------------- -->
+
+        <div class="side__buttons flex items-center gap-[20px] absolute pt-[60px] right-[25px]">
+
+            <button class="bg-[#E3E3E3] px-[20px] py-[8px] rounded-md">Public</button>
+
+            <button class="bg-[#E3E3E3] px-[20px] py-[8px] rounded-md">View</button>
+
+            <button class="bg-[#E3E3E3] px-[10px] py-[13px] rounded-md flex justify-between gap-[20px] items-center">
+
+                <img class="h-[15px] w-[15px]" src="./images/left.svg" alt="left-icon">
+
+                <img class="h-[15px] w-[15px]" src="./images/right.svg" alt="right-icon">
+
+            </button>
+
+        </div>
+
+        <!-- ---------------------------------------------------------------------- CONTENT COLUMNS  ---------------------------------------------------------------------------------------------- -->
+
+        <div class="main__content py-[60px] px-[25px] ">
+
+            <div class="flex gap-[25px] flex-wrap">
+
+                <!-- ---------------------------------------------------------------------- COLUMN-1  ---------------------------------------------------------------------------------------------- -->
+
+                <div class="flex flex-col ">
+
+                    <!-- ----------------------------- BUILDING DETAILS  -------------------------------- -->
+
+                    <div
+                        class="px-[24px] py-[24px] bg-white mt-[60px] max-w-[775px]  flex flex-col shadow-lg rounded-lg">
+
+                        <label class="font-normal">Building Name</label>
+
+                        <input type="text"
+                            class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px] mt-[8px] rounded-lg w-[725px]">
+
+                        <label class="mt-[20px] font-normal">Address</label>
+
+                        <input type="text"
+                            class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px] mt-[8px] rounded-lg w-[725px]">
+
+                        <div class="flex justify-between items-center mt-[20px]">
+
+                            <div class="flex gap-[12px] items-center">
+
+                                <label class="font-normal">Building Stories</label>
+
+                                <input type="text"
+                                    class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px]  rounded-lg w-[100px]">
+
+                            </div>
+
+                            <div class="flex gap-[12px] items-center">
+
+                                <label class="font-normal">Year Built</label>
+
+                                <input type="text"
+                                    class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px]  rounded-lg w-[100px]">
+
+                            </div>
+
+                            <div class="flex gap-[12px] items-center">
+
+                                <label class="font-normal">Total Units</label>
+
+                                <input type="text"
+                                    class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px]  rounded-lg w-[100px]">
+
+                            </div>
+
+
+                        </div>
+
+                        <label class="mt-[20px] font-normal">Address</label>
+
+                        <textarea type="text" rows="5"
+                            class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px] mt-[8px] rounded-lg w-[725px]"></textarea>
+
+                    </div>
+
+                    <!-- ----------------------------- BUILDING MEDIA -------------------------------- -->
+
+
+                    <div class="px-[24px] py-[24px] bg-white mt-[20px] max-w-[775px]  shadow-lg rounded-lg ">
+
+                        <h3 class="font-normal">Media</h3>
+
+                        <div class="flex justify-start items-center gap-[20px] mt-[12px]">
+
+                            <div
+                                class="w-[175px] h-[175px] border border-[#E4E4E4] rounded-lg px-[10px] py-[10px] flex">
+                                <img class="w-[155px] h-[155px] rounded-lg"
+                                    src="./images/3d-rendering-boy-skateboard.jpg" alt="img">
+                            </div>
+
+                            <div
+                                class="w-[175px] h-[175px] border border-[#E4E4E4] rounded-lg px-[10px] py-[10px] flex">
+                                <img class="w-[155px] h-[155px] rounded-lg"
+                                    src="./images/3d-rendering-boy-skateboard.jpg" alt="img">
+                            </div>
+
+                            <div
+                                class="w-[175px] h-[175px] border border-[#E4E4E4] rounded-lg flex justify-center items-center">
+
+                                <div class="flex flex-col items-center gap-[10px]">
+
+                                    <p class="text-[#626262] text-[12px] leading-[24px]">Add</p>
+                                    <p class="text-[#626262] text-[12px] leading-[24px]">Add from URL</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ----------------------------- BUILDING  AMENITIES -------------------------------- -->
+
+                    <div class="px-[24px] py-[24px] bg-white mt-[20px] max-w-[775px]  shadow-lg rounded-lg">
+
+                        <h3 class="font-normal mb-[16px]">Amenities</h3>
+
+                        <hr>
+
+                        <div class="flex mt-[20px] gap-[15px]">
+
+                            <div
+                                class="w-[156px] h-[156px] border border-[#E4E4E4] rounded-lg flex justify-center items-center">
+
+                                <div class="flex flex-col items-center gap-[10px]">
+
+                                    <p class="text-[#626262] text-[12px] leading-[24px]">Add</p>
+                                    <p class="text-[#626262] text-[12px] leading-[24px]">Add from URL</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flex flex-col">
+
+                                <label class="font-normal">Title</label>
+
+                                <input type="text"
+                                    class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px] mt-[8px] rounded-lg w-[555px]">
+
+                                <label class="font-normal mt-[12px]">Sub Title</label>
+
+                                <input type="text"
+                                    class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[16px] py-[8px] mt-[8px] rounded-lg w-[555px]">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex flex-col items-start">
+
+                            <button class="bg-[#E3E3E3] px-[30px] py-[8px] rounded-md text-[12px] mt-[12px]">
+                                Choose Media
+                            </button>
+
+                            <button class=" text-[12px] mt-[12px] uppercase flex gap-[2px]  items-center">
+                                <img class="h-[30px]" src="./images/add.svg" alt="add-icon">
+                                Add Item
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ---------------------------------------------------------------------- COLUMN-2  ---------------------------------------------------------------------------------------------- -->
+
+                <div class=" flex flex-col">
+
+                    <div class="px-[24px] py-[16px] bg-white mt-[60px] w-[385px]  rounded-lg">
+
+                        <h3 class="font-normal">Status</h3>
+
+                        <select
+                            class="border border-[#E4E4E4] outline-none text-[14px] text-[#626262] leading-[24px] px-[10px] py-[13px] mt-[6px] rounded-lg w-full bg-white">
+
+                            <option value="volvo">Real Madrid</option>
+                            <option value="saab">Ac Milan</option>
+                            <option value="mercedes">Liverpool</option>
+                            <option value="audi">Dortmund</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="px-[24px] py-[16px] bg-white mt-[20px] w-[385px] rounded-lg">
+
+                        <div class="flex items-center justify-between mb-[16px]">
+
+                            <h3 class="font-normal">Amenities</h3>
+
+                            <a class="text-[14px] leading-[20px] underline" href="#">View all</a>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="mt-[12px] flex flex-col gap-[12px]">
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="Gym" name="Gym" value="Gym">
+                                <label class="text-[#626262] text-[12px]" for="Gym">Gym</label>
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+
+                                <input type="checkbox" id="Co-working space" name="Co-working space"
+                                    value="Co-working space">
+                                <label class="text-[#626262] text-[12px]" for="Co-working space">Co-Working
+                                    Space</label>
+
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+
+                                <input type="checkbox" id="Rooftop Terrace" name="Rooftop Terrace"
+                                    value="Rooftop Terrace">
+                                <label class="text-[#626262] text-[12px]" for="Rooftop Terrace">
+                                    Rooftop Terrace
+                                </label>
+
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="24/7 Doorman" name="24/7 Doorman" value="24/7 Doorman">
+                                <label class="text-[#626262] text-[12px]" for="24/7 Doorman">24/7 Doorman</label>
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="Concierge" name="Concierge" value="Concierge">
+                                <label class="text-[#626262] text-[12px]" for="Concierge">Concierge</label>
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="Rooftop Lounge" name="Rooftop Lounge" value="Rooftop Lounge">
+                                <label class="text-[#626262] text-[12px]" for="Rooftop Lounge">Rooftop Lounge</label>
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="Golf Simulator" name="Golf Simulator" value="Golf Simulator">
+                                <label class="text-[#626262] text-[12px]" for="Golf Simulator">Golf Simulator</label>
+                            </div>
+
+                            <div class="flex items-center gap-[10px]">
+                                <input type="checkbox" id="Pool" name="Pool" value="Pool">
+                                <label class="text-[#626262] text-[12px]" for="Pool">Pool</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="px-[24px] py-[16px] bg-white mt-[20px] w-[385px] rounded-lg">
+
+                        <h3 class="font-normal mb-[16px]">Thumbnail</h3>
+
+                        <hr>
+
+                        <img class="h-[145px] w-[145px] mt-[12px]" src="./images/3d-rendering-boy-skateboard.jpg"
+                            alt="img">
+
+                        <p class="text-[#737373] text-[14px] leading-[20px] mt-[12px]">Click the image to edit or update
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
